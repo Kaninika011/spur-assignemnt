@@ -79,21 +79,6 @@ function TimeLine() {
           </motion.li>
         ))}
       </ul>
-      {/* <div className="flex w-full h-screen  justify-center align-items-center">
-        <div className="grid h-20 flex-grow card bg-base-100 rounded-box place-items-center justify-center">
-          <span className="text-left font-bold text-2xl">
-            {" "}
-            Be the best you <br /> with Eq
-          </span>
-        </div>
-
-        <div className="grid h-20 flex-grow card bg-base-100 rounded-box place-items-center">
-          content
-        </div>
-        <div className="grid h-20 flex-grow card bg-base-100 rounded-box place-items-center">
-          content
-        </div>
-      </div> */}
     </div>
   );
 }

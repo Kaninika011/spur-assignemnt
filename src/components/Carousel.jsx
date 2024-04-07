@@ -20,7 +20,7 @@ const Carousel = () => {
   }, [xTranslation, width]);
 
   return (
-    <div className="mt-5">
+    <div className="mt-5 mb-40">
       <motion.h2
         initial={{ opacity: 0, x: -200 }}
         whileInView={{ opacity: 1, x: 0 }}
