@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import NavBar from "./components/NavBar";
 import { TextOne, TextTwo } from "./components/Texts";
 import TimeLine from "./components/TimeLine";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Hero />
       <TimeLine />
       <TextTwo />
+      <Footer />
     </>
   );
 }
