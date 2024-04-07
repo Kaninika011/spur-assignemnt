@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import logo from "../assets/logo.png";
+
 const NavBar = () => {
   const [navItems, setNavItems] = useState([
     "Emotions",
@@ -10,7 +11,7 @@ const NavBar = () => {
 
   return (
     <div>
-      <div className="navbar bg-base-100 mt-0 mb-3 pt-0">
+      <div className="navbar bg-base-100 mt-0 mb-3 pt-0 sticky top-0 z-10">
         <div className="navbar-start">
           <div className="w-36 rounded-full">
             <img alt="logo" src={logo} />

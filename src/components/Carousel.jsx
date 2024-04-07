@@ -20,10 +20,15 @@ const Carousel = () => {
   }, [xTranslation, width]);
 
   return (
-    <div>
-      <h2 className="text-4xl font-bold text-zinc-900 mb-8 mt-8 text-left animate__animated animate__fadeInLeft">
+    <div className="mt-5">
+      <motion.h2
+        initial={{ x: -200 }}
+        whileInView={{ x: 0 }}
+        transition={{ duration: 1, delay: 1 }}
+        className="text-4xl font-bold text-zinc-900 mb-8 mt-8 text-left"
+      >
         Does this sound familiar ...
-      </h2>
+      </motion.h2>
       <div className="carousel carousel-center p-4 space-x-4 bg-base-100 rounded-box  flex justify-between ">
         <motion.div
           className="carousel-item"
@@ -31,7 +36,7 @@ const Carousel = () => {
           style={{ x: xTranslation }}
         >
           {[...cardData, ...cardData].map((card, index) =>
-            index === 2 ? (
+            index === 3 ? (
               <motion.div
                 animate={{ rotate: -4 }}
                 className="carousel-item"

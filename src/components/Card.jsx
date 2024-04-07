@@ -35,7 +35,7 @@ const cardData = [
 
 const Card = ({ title, content, color }) => {
   return (
-    <div className={`card w-80 ${color} text-base-content mr-6`}>
+    <div className={`card w-80 ${color} text-base-content mr-6 cursor-pointer`}>
       <div className="card-body">
         <h2 className="card-title">{title}</h2>
         <p>{content}</p>

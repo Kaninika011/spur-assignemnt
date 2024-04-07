@@ -1,5 +1,5 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 const timelineData = [
   {
     title: "It's not as easy as 1-2-3.",
@@ -12,8 +12,9 @@ const timelineData = [
       "And bad behaviours die hard.Fortunately, we give you a great, science-backed techniques to use",
   },
   {
-    title: "HII",
-    description: "loremIpsum",
+    title: "You and your motivation",
+    description:
+      "And bad behaviours die hard.Fortunately, we give you a great, science-backed techniques to use",
   },
   {
     title: "You and your motivation",
@@ -29,17 +30,32 @@ const timelineData = [
 
 function TimeLine() {
   return (
-    <div className="mt-10">
-      <h6 className="text-left font-medium text-lg">
+    <div className="mt-10 mb-16">
+      <motion.h6
+        initial={{ opacity: 0, x: -200 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 2, delay: 0.3, type: "tween" }}
+        className="text-left font-medium text-md lg:text-lg"
+      >
         {" "}
         Wrong with self-improvement & how we're fixing it.
-      </h6>
-      <h1 className="text-left font-extrabold text-5xl">
+      </motion.h6>
+      <motion.h1
+        initial={{ opacity: 0, x: -200 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 2, delay: 0.3, type: "tween" }}
+        className="text-left font-extrabold text-2xl lg:text-5xl"
+      >
         Self-improvement.Ugh.
-      </h1>
+      </motion.h1>
       <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical mt-10 list-outside text-left">
         {timelineData.map((item, index) => (
-          <li key={index}>
+          <motion.li
+            initial={{ opacity: 0.5, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.7, duration: 1 }}
+            key={index}
+          >
             <hr />
             <div className="timeline-middle">
               <svg
@@ -60,7 +76,7 @@ function TimeLine() {
               {item.description}
             </div>
             <hr />
-          </li>
+          </motion.li>
         ))}
       </ul>
       {/* <div className="flex w-full h-screen  justify-center align-items-center">
