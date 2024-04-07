@@ -3,6 +3,19 @@ import banner from "../assets/home.svg";
 import { motion } from "framer-motion";
 
 const Hero = () => {
+  const imgVariants = {
+    hidden: { rotate: -180, opacity: 0 },
+    visible: {
+      opacity: 1,
+      rotate: 0,
+      transition: {
+        delay: 0.2,
+        ease: "easeIn",
+        duration: 1.7,
+      },
+    },
+  };
+
   return (
     <>
       <div className="hero h-full pb-32 w-100 bg-orange-50 rounded-xl mb-40">
@@ -25,7 +38,13 @@ const Hero = () => {
             >
               Meet the ahead app
             </motion.h1>{" "}
-            <img src={banner} className="max-w-64 mt-12" />
+            <motion.img
+              src={banner}
+              className="max-w-64 mt-12"
+              variants={imgVariants}
+              initial="hidden"
+              whileInView="visible"
+            />
           </div>
           <motion.div
             initial={{ opacity: 0, x: 200 }}
@@ -39,11 +58,9 @@ const Hero = () => {
               sized, science-driven tools to boost emotional
               <br /> intelligence.
             </p>
-            <p className="text-left">
-              Provident cupiditate voluptatem et in.
-              <br /> Quaerat fugiat ut assumenda excepturi <br /> exercitationem
-              quasi. In deleniti <br />
-              eaque aut repudiandae et a id nisi.
+            <p className="text-left mt-4">
+              Think of it as a pocket cheerleader towards a <br />
+              better fulfilling life.
             </p>
           </motion.div>
         </div>
