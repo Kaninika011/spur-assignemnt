@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const Hero = () => {
   return (
     <>
-      <div className="hero h-full pb-32 w-100 bg-orange-100 rounded-xl mb-40">
+      <div className="hero h-full pb-32 w-100 bg-orange-50 rounded-xl mb-40">
         <div className="hero-content flex-col lg:flex-row">
           <div>
             <motion.h6
@@ -21,11 +21,11 @@ const Hero = () => {
               initial={{ opacity: 0, x: -200 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 2, delay: 0.5, type: "tween" }}
-              className="text-left font-bold text-xl lg:text-5xl ml-7"
+              className="text-left font-bold text-xl lg:text-4xl ml-7"
             >
-              Meet ahead app
+              Meet the ahead app
             </motion.h1>{" "}
-            <img src={banner} className="max-w-64 mt-20" />
+            <img src={banner} className="max-w-64 mt-12" />
           </div>
           <motion.div
             initial={{ opacity: 0, x: 200 }}

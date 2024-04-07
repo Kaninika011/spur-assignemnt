@@ -22,10 +22,10 @@ const Carousel = () => {
   return (
     <div className="mt-5">
       <motion.h2
-        initial={{ x: -200 }}
-        whileInView={{ x: 0 }}
+        initial={{ opacity: 0, x: -200 }}
+        whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, delay: 1 }}
-        className="text-4xl font-bold text-zinc-900 mb-8 mt-8 text-left"
+        className="text-4xl font-extrabold mb-8 mt-8 text-left"
       >
         Does this sound familiar ...
       </motion.h2>

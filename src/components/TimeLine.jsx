@@ -44,7 +44,7 @@ function TimeLine() {
         initial={{ opacity: 0, x: -200 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 2, delay: 0.3, type: "tween" }}
-        className="text-left font-extrabold text-2xl lg:text-5xl"
+        className="text-left font-extrabold text-2xl lg:text-4xl"
       >
         Self-improvement.Ugh.
       </motion.h1>
