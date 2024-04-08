@@ -6,8 +6,9 @@ import logo from "../assets/logo.png";
 
 const Footer = () => {
   return (
-    <div className="divider flex flex-col w-full ">
-      <footer className="footer footer-center p-10 bg-base-100 ">
+    <div className="w-full">
+      <div className="divider"></div>
+      <footer className="footer footer-center p-10 bg-base-100">
         <aside>
           <img src={logo} alt="logo" className="w-40" />
           <p className="font-bold text-indigo-600 text-3xl">ahead</p>
@@ -23,7 +24,6 @@ const Footer = () => {
                 Auguststraße, 26 10117 Berlin{" "}
               </p>
             </a>
-
             <a className="flex items-center">
               <div className="h-8 w-8 flex items-center justify-center rounded-full bg-green-100">
                 <IoMail className="h-5 w-5 text-green-400" />
@@ -34,7 +34,7 @@ const Footer = () => {
             </a>
           </div>
           <img src={apple} alt="apple-logo" className="w-28 h-28 " />{" "}
-          <p> © 2022 Ahead app. All rights reserved</p>
+          <p>© 2022 Ahead app. All rights reserved</p>
         </nav>
       </footer>
     </div>
