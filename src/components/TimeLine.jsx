@@ -36,7 +36,7 @@ function TimeLine() {
       <motion.h6
         initial={{ opacity: 0, x: -200 }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 2, delay: 0.3, type: "tween" }}
+        transition={{ duration: 1, delay: 0.2, type: "tween" }}
         className="text-left font-medium text-md lg:text-lg"
       >
         {" "}
@@ -45,7 +45,7 @@ function TimeLine() {
       <motion.h1
         initial={{ opacity: 0, x: -200 }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 2, delay: 0.3, type: "tween" }}
+        transition={{ duration: 1, delay: 0.2, type: "tween" }}
         className="text-left font-extrabold text-2xl lg:text-4xl"
       >
         Self-improvement.Ugh.
@@ -53,7 +53,7 @@ function TimeLine() {
       <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical mt-10 list-outside text-left">
         {timelineData.map((item, index) => (
           <motion.li
-            initial={{ opacity: 0.5, y: 20 }}
+            initial={{ opacity: 0.1, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7, duration: 1 }}
             key={index}

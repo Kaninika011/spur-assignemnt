@@ -24,7 +24,7 @@ const Carousel = () => {
       <motion.h2
         initial={{ opacity: 0, x: -200 }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1, delay: 1 }}
+        transition={{ duration: 1, delay: 0.5 }}
         className="text-4xl font-extrabold mb-8 mt-8 text-left"
       >
         Does this sound familiar ...

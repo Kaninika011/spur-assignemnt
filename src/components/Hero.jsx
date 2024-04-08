@@ -9,7 +9,7 @@ const Hero = () => {
       opacity: 1,
       rotate: 0,
       transition: {
-        delay: 0.2,
+        delay: 0.5,
         ease: "easeIn",
         duration: 1.7,
       },
@@ -24,7 +24,7 @@ const Hero = () => {
             <motion.h6
               initial={{ opacity: 0, x: -200 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1, type: "tween" }}
+              transition={{ duration: 1, delay: 0.2, type: "tween" }}
               className="text-left font-medium text-lg mt-7 ml-7"
             >
               {" "}
@@ -33,7 +33,7 @@ const Hero = () => {
             <motion.h1
               initial={{ opacity: 0, x: -200 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 2, delay: 0.5, type: "tween" }}
+              transition={{ duration: 1, delay: 0.2, type: "tween" }}
               className="text-left font-bold text-xl lg:text-4xl ml-7"
             >
               Meet the ahead app

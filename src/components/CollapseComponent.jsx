@@ -7,7 +7,7 @@ const CollapseComponent = () => {
       <motion.h2
         initial={{ opacity: 0, x: -200 }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1, delay: 1 }}
+        transition={{ duration: 1, delay: 0.5 }}
         className="text-4xl font-extrabold mb-8 mt-16 text-left"
       >
         {" "}
@@ -33,7 +33,7 @@ const CollapseComponent = () => {
             transition={{
               ease: "linear",
               duration: 1,
-              delay: 1,
+              delay: 1.5,
             }}
             className="btn btn-active  w-24 ml-7 mb-8 rounded-full"
           >
