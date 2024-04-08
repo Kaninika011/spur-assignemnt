@@ -1,6 +1,7 @@
 # Features
-Built with React, Vite, Tailwind CSS, daisyUI, and Framer Motion
-List any key features or functionality your project offers
+Built with React, Vite, Tailwind CSS, daisyUI, and Framer Motion.
+
+
 Installation
 Clone the repository:
 git clone https://github.com/Kaninika011/spur-fit-assignment
