@@ -9,7 +9,7 @@ const cardData = [
   {
     title: "😎",
     content:
-      "you get a promotion at work, you questipn yourself and feel anxious.",
+      "you get a promotion at work, you questin yourself and feel anxious.",
     color: "bg-green-100",
   },
   {
@@ -20,7 +20,7 @@ const cardData = [
   {
     title: "🙂",
     content:
-      "you get a promotion at work, you questipn yourself and feel anxious.",
+      "you get a promotion at work, you question yourself and feel anxious.",
     color: "bg-orange-100",
   },
   {
@@ -31,7 +31,7 @@ const cardData = [
   {
     title: "🤔",
     content:
-      "you get a promotion at work, you questipn yourself and feel anxious.",
+      "you get a promotion at work, you question yourself and feel anxiou.",
     color: "bg-purple-100",
   },
 ];
