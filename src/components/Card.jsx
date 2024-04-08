@@ -3,32 +3,35 @@ import React from "react";
 const cardData = [
   {
     title: "🙂",
-    content: "If a dog chews shoes whose shoes does he choose?",
+    content: "you argue with colleague, you get angry and defensive.",
     color: "bg-orange-100",
   },
   {
     title: "😎",
-    content: "Why did the tomato turn red? Because it saw the salad dressing!",
+    content:
+      "you get a promotion at work, you questipn yourself and feel anxious.",
     color: "bg-green-100",
   },
   {
     title: "🤔",
-    content: "What starts with E, ends with E, and only has one letter in it?",
+    content: "you argue with colleague, you get angry and defensive.",
     color: "bg-purple-100",
   },
   {
     title: "🙂",
-    content: "If a dog chews shoes whose shoes does he choose?",
+    content:
+      "you get a promotion at work, you questipn yourself and feel anxious.",
     color: "bg-orange-100",
   },
   {
     title: "😎",
-    content: "Why did the tomato turn red? Because it saw the salad dressing!",
+    content: "you argue with colleague, you get angry and defensive.",
     color: "bg-green-100",
   },
   {
     title: "🤔",
-    content: "What starts with E, ends with E, and only has one letter in it?",
+    content:
+      "you get a promotion at work, you questipn yourself and feel anxious.",
     color: "bg-purple-100",
   },
 ];
@@ -37,8 +40,8 @@ const Card = ({ title, content, color }) => {
   return (
     <div className={`card w-80 ${color} text-base-content mr-6 cursor-pointer`}>
       <div className="card-body">
-        <h2 className="card-title">{title}</h2>
-        <p>{content}</p>
+        <h2 className="card-title text-xl">{title}</h2>
+        <p className="text-md font-mono font-medium">{content}</p>
       </div>
     </div>
   );

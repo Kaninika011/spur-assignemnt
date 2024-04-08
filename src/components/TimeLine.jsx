@@ -32,7 +32,7 @@ const timelineData = [
 
 function TimeLine() {
   return (
-    <div className="mt-10 mb-16">
+    <div className="mt-10 mb-16 justify-center align-items-center">
       <motion.h6
         initial={{ opacity: 0, x: -200 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -50,7 +50,7 @@ function TimeLine() {
       >
         Self-improvement.Ugh.
       </motion.h1>
-      <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical mt-10 list-outside text-left">
+      <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical mt-10 list-outside text-left ">
         {timelineData.map((item, index) => (
           <motion.li
             initial={{ opacity: 0.1, y: 20 }}
