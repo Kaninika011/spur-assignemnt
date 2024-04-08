@@ -43,7 +43,7 @@ function TimeLine() {
         Wrong with self-improvement & how we're fixing it.
       </motion.h6>
       <motion.h1
-        initial={{ opacity: 0, x: -2 }}
+        initial={{ opacity: 0, x: -200 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, delay: 0.2, type: "tween" }}
         className="text-left font-extrabold text-2xl lg:text-4xl"
