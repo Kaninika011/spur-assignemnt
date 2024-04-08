@@ -1,13 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import logo from "../assets/logo.png";
 
 const NavBar = () => {
-  const [navItems, setNavItems] = useState([
-    "Emotions",
-    "Manifesto",
-    "Self-AwarenessTest",
-    "Work With Us",
-  ]);
+  const navItems = ["Emotions", "Manifesto", "Self-AwarenessTest", "Work With Us"];
 
   return (
     <div>
