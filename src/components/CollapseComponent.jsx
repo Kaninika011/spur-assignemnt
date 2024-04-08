@@ -85,7 +85,7 @@ const CollapseComponent = () => {
             transition={{
               ease: "linear",
               duration: 1,
-              delay: 1.5,
+              delay: 2,
             }}
             className="btn btn-active  w-24 ml-7 mb-8 rounded-full"
           >
