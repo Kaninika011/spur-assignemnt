@@ -16,9 +16,9 @@ npm run dev
 This will start the development server at http://localhost:5173.
 
 # Technologies Used
-React
-Vite 
-Tailwind CSS 
-daisyUI
-Framer Motion 
+ - React
+ - Vite 
+- Tailwind CSS 
+- daisyUI
+- Framer Motion 
 
